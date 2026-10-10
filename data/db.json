@@ -1,0 +1,104 @@
+﻿{
+    "messages":  [
+
+                 ],
+    "contacts":  [
+                     {
+                         "id":  "20261003083827",
+                         "name":  "Hari Kumar",
+                         "tags":  [
+
+                                  ],
+                         "company":  null,
+                         "phone":  "918919283809",
+                         "email":  "hari@pemmaglobal.com",
+                         "status":  "active"
+                     }
+                 ],
+    "templates":  [
+                      {
+                          "header_type":  "text",
+                          "id":  "1085350470521954",
+                          "status":  "approved",
+                          "header_content":  "Pemma Global Verification",
+                          "category":  "MARKETING",
+                          "footer":  "Pemma Global Consulting",
+                          "name":  "registration_v3",
+                          "meta_template_id":  "1085350470521954",
+                          "body":  "Hello,\\nGreetings from *Pemma Global*.\\nPlease complete your registration form below.",
+                          "language":  "en_US",
+                          "buttons":  "{\"navigateScreen\":\"SURVEY\",\"flowId\":1089671330724222,\"type\":\"flow\",\"text\":\"Apply Now\"}"
+                      },
+                      {
+                          "header_type":  "none",
+                          "id":  "1397417172366614",
+                          "status":  "approved",
+                          "header_content":  "",
+                          "category":  "MARKETING",
+                          "footer":  "",
+                          "name":  "registration",
+                          "meta_template_id":  "1397417172366614",
+                          "body":  "Hello ,\nGreetings from *Pemma Global*.\nWe are hiring multiple positions.\nTo schedule interview please apply ASAP.",
+                          "language":  "en_US",
+                          "buttons":  "{\"navigateScreen\":\"SURVEY\",\"flowId\":1089671330724222,\"type\":\"flow\",\"text\":\"Apply now\"}"
+                      },
+                      {
+                          "header_type":  "image",
+                          "id":  "1676863850423040",
+                          "status":  "approved",
+                          "header_content":  "",
+                          "category":  "MARKETING",
+                          "footer":  "",
+                          "name":  "sai_camp",
+                          "meta_template_id":  "1676863850423040",
+                          "body":  "గౌరవనీయులైన {{name}} గారికి విన్నపం..\nత్వరలో మన రాజమండ్రి బార్ అసోసియేషన్ కు జరగబోయే ఎన్నికలలో నేను జాయింట్ సెక్రటరీ అభ్యర్థిగా పోటీ చేయుచున్నాను \nకావున మీ యొక్క సంపూర్ణమైన మద్దతు నాకు తెలిపి ఓటు వేసి గెలిపించాలని ప్రార్ధిస్తున్నాను.\nC.PURNA RAMAKANTH REDDY @ CPR REDDY",
+                          "language":  "te",
+                          "buttons":  "[]"
+                      },
+                      {
+                          "header_type":  "none",
+                          "id":  "1211826931123274",
+                          "status":  "approved",
+                          "header_content":  "",
+                          "category":  "MARKETING",
+                          "footer":  "",
+                          "name":  "hello_world_",
+                          "meta_template_id":  "1211826931123274",
+                          "body":  "Hello",
+                          "language":  "en",
+                          "buttons":  "[]"
+                      }
+                  ],
+    "campaigns":  [
+
+                  ],
+    "settings":  {
+                     "meta_api_version":  "v20.0",
+                     "business_name":  "Pemma Global Consulting",
+                     "business_phone":  "+91 8919283809",
+                     "wa_waba_id":  "26571024635838799",
+                     "wa_phone_id":  "1083180068204622",
+                     "wa_app_id":  "3068315393510761",
+                     "wa_app_secret":  "d11d5abfdc772717025c625039a54417",
+                     "wa_token":  "EAAV0VpG2S4wBQZBBrqYDCvRbXpglV8Exd4vCJ0csJZC2dxsHT6FEx6HYVzTwG4t4HVPtAj9frO6C74SvMAMKwhLVXoW4Bc3MjGSUCjZA2hZCyzo4Cf9E1yMs6pVrErfiw76E1Ms86o5q5oI3ivdzbU2v2rFVbPWbl8EdsUCQVPyJxZC3NAMS5ZAlnEwEdDKgZDZD",
+                     "webhook_verify_token":  "whatsflow_webhook_2024"
+                 },
+    "groups":  [
+
+               ],
+    "businesses":  [
+                       {
+                           "is_active":  1,
+                           "id":  1,
+                           "status":  "active",
+                           "app_secret":  "d11d5abfdc772717025c625039a54417",
+                           "phone_id":  "1083180068204622",
+                           "name":  "Pemma Global Consulting",
+                           "app_id":  "3068315393510761",
+                           "token":  "EAAV0VpG2S4wBQZBBrqYDCvRbXpglV8Exd4vCJ0csJZC2dxsHT6FEx6HYVzTwG4t4HVPtAj9frO6C74SvMAMKwhLVXoW4Bc3MjGSUCjZA2hZCyzo4Cf9E1yMs6pVrErfiw76E1Ms86o5q5oI3ivdzbU2v2rFVbPWbl8EdsUCQVPyJxZC3NAMS5ZAlnEwEdDKgZDZD",
+                           "webhook_verify_token":  "whatsflow_webhook_2024",
+                           "waba_id":  "26571024635838799",
+                           "phone":  "+91 8919283809"
+                       }
+                   ]
+}

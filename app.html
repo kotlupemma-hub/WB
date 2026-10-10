@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WhatsFlow - Simple WhatsApp Business Messaging. Connect your WhatsApp Business accounts, manage customer conversations, and send business messages from one powerful platform.">
+  <title>WhatsFlow — Simple WhatsApp Business Messaging</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    /* Gradient color helpers not in main.css */
+    .gradient-teal { background: linear-gradient(135deg, #14B8A6, #0D9488); }
+    .gradient-gray { background: linear-gradient(135deg, #64748B, #475569); }
+
+    /* Fix avatar colors */
+    .avatar.gradient-green { background: linear-gradient(135deg, #25D366, #128C7E); color: #fff; }
+    .avatar.gradient-blue  { background: linear-gradient(135deg, #3B82F6, #1D4ED8); color: #fff; }
+    .avatar.gradient-purple{ background: linear-gradient(135deg, #8B5CF6, #6D28D9); color: #fff; }
+    .avatar.gradient-orange{ background: linear-gradient(135deg, #F59E0B, #D97706); color: #fff; }
+    .avatar.gradient-pink  { background: linear-gradient(135deg, #EC4899, #BE185D); color: #fff; }
+    .avatar.gradient-teal  { background: linear-gradient(135deg, #14B8A6, #0D9488); color: #fff; }
+
+    /* Input styles fallback */
+    input[type="checkbox"] { cursor: pointer; }
+
+    /* Page transition */
+    #page-content { animation: fadeIn 0.2s ease; }
+    .page-content > div { animation: slideUp 0.25s ease; }
+
+    /* Sidebar overlay mobile fix */
+    @media (max-width: 768px) {
+      .sidebar { box-shadow: var(--shadow-2xl); }
+    }
+  </style>
+</head>
+<body>
+  <!-- App will be rendered here by app.js -->
+  <div id="app-init" style="position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:var(--bg-secondary);z-index:9999;flex-direction:column;gap:16px;transition:opacity 0.4s ease;">
+    <div style="display:flex;align-items:center;gap:12px;">
+      <div style="width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,#25D366,#128C7E);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(37,211,102,0.4);">
+        <svg width="26" height="26" fill="none" stroke="white" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+        </svg>
+      </div>
+      <div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.75rem;color:var(--text-primary);">WhatsFlow</div>
+        <div style="font-size:0.8rem;color:var(--text-muted);">Simple WhatsApp Business Messaging</div>
+      </div>
+    </div>
+    <div style="display:flex;gap:6px;margin-top:8px;">
+      <div style="width:8px;height:8px;border-radius:50%;background:#25D366;animation:bounce 1.4s ease-in-out infinite;"></div>
+      <div style="width:8px;height:8px;border-radius:50%;background:#128C7E;animation:bounce 1.4s ease-in-out 0.2s infinite;"></div>
+      <div style="width:8px;height:8px;border-radius:50%;background:#075E54;animation:bounce 1.4s ease-in-out 0.4s infinite;"></div>
+    </div>
+  </div>
+
+  <!-- Scripts (order matters) -->
+  <script src="js/store.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    // Remove splash screen after app loads
+    function hideSplash() {
+      const splash = document.getElementById('app-init');
+      if (splash) {
+        splash.style.pointerEvents = 'none';
+        splash.style.opacity = '0';
+        setTimeout(() => splash.remove(), 400);
+      }
+    }
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      setTimeout(hideSplash, 300);
+    } else {
+      window.addEventListener('DOMContentLoaded', () => setTimeout(hideSplash, 300));
+    }
+  </script>
+</body>
+</html>
